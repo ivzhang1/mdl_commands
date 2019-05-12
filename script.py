@@ -92,16 +92,16 @@ def run(filename):
 
             matrix_mult( stack[-1], polygons )
             if(command['constants']):
-                draw_polygons(polygons, screen, zbuffer, view, ambient, light, symbols, command['constants'])
+                try:
+                    draw_polygons(polygons, screen, zbuffer, view, ambient, light, symbols, command['constants'])
+                except KeyError:
+                    draw_polygons(polygons, screen, zbuffer, view, ambient, light, symbols, reflect)
             else:
                 draw_polygons(polygons, screen, zbuffer, view, ambient, light, symbols, reflect)
             polygons = []
 
-
-            # add_box(polygons, float(command['args'][0]), float(command['args'][1]), float(command['args'][2]), float(command['args'][3]), step_3d)
-            # matrix_mult( stack[-1], polygons )
-            # if(command['constants']):
-            #     draw_polygons(polygons, screen, zbuffer, view, ambient, light, symbols, command['constants'])
-            # else:
-            #     draw_polygons(polygons, screen, zbuffer, view, ambient, light, symbols, reflect)
-            # polygons = []
+        elif command['op'] == 'line':
+            add_edge(edges, float(command['args'][0]), float(command['args'][1]), float(command['args'][2]), float(command['args'][3]), float(command['args'][4]), float(command['args'][5]))
+            matrix_mult( stack[-1], edges )
+            draw_lines(edges, screen, zbuffer, color)
+            edges = []
