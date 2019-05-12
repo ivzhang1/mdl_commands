@@ -105,3 +105,6 @@ def run(filename):
             matrix_mult( stack[-1], edges )
             draw_lines(edges, screen, zbuffer, color)
             edges = []
+
+        elif command['op'] == 'save':
+            save_extension(screen, command['args'])
