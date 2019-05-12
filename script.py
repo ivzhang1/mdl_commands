@@ -108,3 +108,9 @@ def run(filename):
 
         elif command['op'] == 'save':
             save_extension(screen, command['args'])
+
+        elif command['op'] == 'display':
+            display(screen)
+
+        else:
+            print("Unknown operator")
