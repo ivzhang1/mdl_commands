@@ -1,0 +1,38 @@
+constants shiny_purple 0.3 0.2 0.8 0.3 0 0 0.3 0.2 0.8
+constants shiny_teal 0.3 0.0 0.0 0.3 0.2 0.8 0.3 0.2 0.8
+constants dull_yellow 0.3 0.8 0.2 0.3 0.8 0.2 0 0 0
+sphere shiny_teal 30 446 204 36
+rotate y 27
+rotate y 355
+box shiny_teal 27 63 258 388 404 64
+box shiny_purple 7 498 472 259 152 5
+box shiny_teal 493 242 467 480 248 33
+sphere shiny_purple 454 115 268 9
+sphere dull_yellow 447 388 474 37
+torus shiny_teal 261 436 14 282 9
+sphere shiny_purple 423 382 193 31
+box dull_yellow 255 127 82 81 457 86
+move 202 334 7
+box dull_yellow 230 52 438 239 195 3
+rotate x 135
+torus dull_yellow 0 6 332 238 58
+constants shiny_purple 0.3 0.2 0.8 0.3 0 0 0.3 0.2 0.8
+constants shiny_teal 0.3 0.0 0.0 0.3 0.2 0.8 0.3 0.2 0.8
+constants dull_yellow 0.3 0.8 0.2 0.3 0.8 0.2 0 0 0
+sphere dull_yellow 444 261 31 7
+move 186 357 1
+box shiny_teal 208 198 257 299 255 18
+move 414 361 1
+torus shiny_teal 204 196 424 72 74
+rotate z 308
+torus shiny_teal 485 165 445 307 14
+torus dull_yellow 464 214 384 386 9
+box shiny_teal 364 419 403 492 408 1
+move 98 112 26
+sphere shiny_purple 445 42 346 32
+sphere shiny_teal 121 458 139 84
+move 198 335 80
+sphere shiny_teal 104 285 231 44
+rotate y 178
+display
+save randy.png

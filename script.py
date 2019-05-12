@@ -47,7 +47,7 @@ def run(filename):
     reflect = '.white'
     polygons = []
     edges = []
-
+    
     for command in commands:
         if command['op'] == 'push':
             stack.append([row[:] for row in stack[-1]])
